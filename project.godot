@@ -10,8 +10,8 @@ config_version=3
 
 [application]
 
-config/name="cute god"
-run/main_scene="res://World.tscn"
+config/name="Random Terrian"
+run/main_scene="res://scenes/Main.tscn"
 config/icon="res://icon.png"
 
 [display]

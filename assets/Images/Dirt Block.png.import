@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Dirt Block.png-436b87c32834d9d135ca7afdd79f652a.stex"
+
+[deps]
+
+source_file="res://assets/Images/Dirt Block.png"
+source_md5="6b8eabce240514cdee0380ffa14142b2"
+
+dest_files=[ "res://.import/Dirt Block.png-436b87c32834d9d135ca7afdd79f652a.stex" ]
+dest_md5="b66a27fcc667b2697bda43949ed37206"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/World.gd" type="Script" id=1]
+[ext_resource path="res://scripts/MapFSM.gd" type="Script" id=2]
+
+[node name="World" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+num_of_layers = 5
+layer_offset = 40
+layer_height = 7
+layer_width = 7
+
+[node name="MapFSM" type="Node" parent="." index="0"]
+
+script = ExtResource( 2 )
+
+

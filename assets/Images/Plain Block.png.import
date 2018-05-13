@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Plain Block.png-f19cbd23cd19e86e3494f55a23e677c8.stex"
+
+[deps]
+
+source_file="res://assets/Images/Plain Block.png"
+source_md5="8f1d32bca8d3edc19b97c0d276dd2e8c"
+
+dest_files=[ "res://.import/Plain Block.png-f19cbd23cd19e86e3494f55a23e677c8.stex" ]
+dest_md5="eeca444dc52fee36d76d0e7d7bc63083"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

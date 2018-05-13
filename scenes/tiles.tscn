@@ -1,0 +1,153 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/Images/Plain Block.png" type="Texture" id=1]
+[ext_resource path="res://assets/Images/Dirt Block.png" type="Texture" id=2]
+[ext_resource path="res://assets/Images/emerald.png" type="Texture" id=3]
+[ext_resource path="res://assets/Images/Grass Block.png" type="Texture" id=4]
+[ext_resource path="res://assets/Images/ruby.png" type="Texture" id=5]
+[ext_resource path="res://assets/Images/sapphire.png" type="Texture" id=6]
+[ext_resource path="res://assets/Images/Stone Block.png" type="Texture" id=7]
+[ext_resource path="res://assets/Images/Water Block.png" type="Texture" id=8]
+
+[node name="Node2D" type="Node2D"]
+
+position = Vector2( 70, 50 )
+
+[node name="blank" type="Sprite" parent="." index="0"]
+
+position = Vector2( 630, 40 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blank" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="blank/StaticBody2D" index="0"]
+
+position = Vector2( 0, 30 )
+scale = Vector2( 1, 1.02083 )
+build_mode = 0
+polygon = PoolVector2Array( 50, 29.0204, -50, 29.0204, -50, 58.4082, 50, 58.4082 )
+
+[node name="dirt" type="Sprite" parent="." index="1"]
+
+position = Vector2( 160, 230 )
+texture = ExtResource( 2 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="dirt" index="0"]
+
+position = Vector2( 570, -190 )
+scale = Vector2( 1.59375, 0.78125 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="dirt/StaticBody2D2" index="0"]
+
+position = Vector2( -338.824, 294.4 )
+scale = Vector2( 1, 1.02083 )
+build_mode = 0
+polygon = PoolVector2Array( 12.549, 25.0775, -50.1961, 25.0775, -50.1961, 62.6939, 12.549, 62.6939 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="emerald" type="Sprite" parent="." index="2"]
+
+position = Vector2( 820, 40 )
+texture = ExtResource( 3 )
+
+[node name="grass" type="Sprite" parent="." index="3"]
+
+position = Vector2( 320, 40 )
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Material", "Offset", "Visibility" ]
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="grass" index="0"]
+
+position = Vector2( 310, 0 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="grass/StaticBody2D2" index="0"]
+
+position = Vector2( -310, 30 )
+scale = Vector2( 1, 1.02083 )
+build_mode = 0
+polygon = PoolVector2Array( 50, 29.0204, -50, 29.0204, -50, 58.4082, 50, 58.4082 )
+
+[node name="ruby" type="Sprite" parent="." index="4"]
+
+position = Vector2( 470, 40 )
+texture = ExtResource( 5 )
+
+[node name="sapphire" type="Sprite" parent="." index="5"]
+
+position = Vector2( 10, 230 )
+texture = ExtResource( 6 )
+
+[node name="stone" type="Sprite" parent="." index="6"]
+
+position = Vector2( 160, 40 )
+texture = ExtResource( 7 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="stone" index="0"]
+
+position = Vector2( 470, 0 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stone/StaticBody2D3" index="0"]
+
+position = Vector2( -470, 30 )
+scale = Vector2( 1, 1.02083 )
+build_mode = 0
+polygon = PoolVector2Array( 50, 29.0204, -50, 29.0204, -50, 58.4082, 50, 58.4082 )
+
+[node name="water" type="Sprite" parent="." index="7"]
+
+position = Vector2( 10, 40 )
+texture = ExtResource( 8 )
+region_rect = Rect2( 0, 0, 50, 50 )
+_sections_unfolded = [ "Region", "Transform" ]
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="water" index="0"]
+
+position = Vector2( 620, 0 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="water/StaticBody2D4" index="0"]
+
+position = Vector2( -620, 30 )
+scale = Vector2( 1, 1.02083 )
+build_mode = 0
+polygon = PoolVector2Array( 50, 29.0204, -50, 29.0204, -50, 58.4082, 50, 58.4082 )
+
+
